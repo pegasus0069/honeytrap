@@ -5,7 +5,7 @@ account = Account(credentials)
 
 if account.authenticate():
     m = account.new_message()
-    m.to.add("hasinmahir@yahoo.com")
+    m.to.add("nooresadman@gmail.com")
     m.subject = "Test Email"
     m.body = "This is a test email sent using O365 library."
     m.send()

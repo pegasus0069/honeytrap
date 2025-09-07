@@ -7,8 +7,8 @@ import os
 # Path to the JSON file
 data_file_path = os.path.join(os.path.dirname(__file__), 'data.json')
 # Sender and receiver details
-sender_email = "donotreply@ukcybersecurity.co.uk"
-app_password = "ylI8Q~XebouTeKkGZ.dbBaCC2drZoVgUKFpfPbNM"
+sender_email = "Give your sender email here"
+app_password = "Give your app password here"
 
 def send_email(message_body):
     with open(data_file_path, 'r') as f:

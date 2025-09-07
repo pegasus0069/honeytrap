@@ -7,11 +7,11 @@ import os
 # Path to the JSON file
 data_file_path = os.path.join(os.path.dirname(__file__), 'data.json')
 # Sender and receiver details
-sender_email = "hasinmahir@gmail.com"
-app_password = "whpf udpl sjrw xaev"
+sender_email = "write your sender email here"
+app_password = "write your app password here"
 
 def send_email(message_body):
-    receiver_email = "arnoyk123@gmail.com"
+    receiver_email = "Write your receiver email here"
     if not receiver_email:
          print('Receiver email is required')
     msg = MIMEMultipart()

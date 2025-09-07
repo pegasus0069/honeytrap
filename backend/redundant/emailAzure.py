@@ -7,12 +7,12 @@ import json
 data_file_path = os.path.join(os.path.dirname(__file__), 'data.json')
 
 # Microsoft App Credentials
-CLIENT_ID = "7db9bd2d-a6c2-4de3-9bfb-e9d8a84e57a5"
-CLIENT_SECRET = "ylI8Q~XebouTeKkGZ.dbBaCC2drZoVgUKFpfPbNM"
-TENANT_ID = "e0d4f0ff-16df-4da2-b17f-3026b80f7a32"
+CLIENT_ID = "Write your client id here"
+CLIENT_SECRET = "Write your client secret here"
+TENANT_ID = "Write your tenant id here"
 AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
 SCOPES = ["https://graph.microsoft.com/.default"]
-SENDER_EMAIL = "donotreply@ukcybersecurity.co.uk"
+SENDER_EMAIL = "Write your sender email here"
 
 # Get Access Token
 def get_access_token():
