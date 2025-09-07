@@ -1,0 +1,6 @@
+backend/ukcs
+electron/node_modules
+electron/out
+electron/dist
+/backend/__pycache__
+/backend/newBackend

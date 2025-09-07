@@ -1,0 +1,47 @@
+.idlePage {
+    height:90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+.logoName {
+    height: 65vh;
+    width: auto;
+}
+.span {
+    font-size: 25px;   
+    font-weight: bold; 
+}
+
+.row1 {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 27vw;
+    justify-content: center; 
+}
+
+.row2{
+    position: relative;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.row3{
+    position: relative;
+    top: 22vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 10vw;
+}
+.row1Logo{
+    height: 30vh;
+    width: auto;
+}

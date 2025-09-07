@@ -1,0 +1,39 @@
+254 INFO: PyInstaller: 6.11.1, contrib hooks: 2025.1
+254 INFO: Python: 3.13.2
+255 INFO: Platform: Linux-6.6.63-v8+-aarch64-with-glibc2.40
+255 INFO: Python environment: /usr
+255 INFO: wrote /home/arnoy/Documents/GitHub/Honeytrap-UKCS/backend/server.spec
+259 INFO: UPX is available but is disabled on non-Windows due to known compatibility problems.
+259 INFO: Removing temporary files and cleaning cache in /home/arnoy/.cache/pyinstaller
+Traceback (most recent call last):
+  File "/usr/bin/pyinstaller", line 33, in <module>
+    sys.exit(load_entry_point('pyinstaller==6.11.1', 'console_scripts', 'pyinstaller')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/PyInstaller/__main__.py", line 231, in _console_script_run
+    run()
+    ~~~^^
+  File "/usr/lib/python3/dist-packages/PyInstaller/__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/PyInstaller/__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/PyInstaller/building/build_main.py", line 1252, in main
+    build(specfile, distpath, workpath, clean_build)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/PyInstaller/building/build_main.py", line 1147, in build
+    shutil.rmtree(f)
+    ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/shutil.py", line 763, in rmtree
+    _rmtree_safe_fd(stack, onexc)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/shutil.py", line 707, in _rmtree_safe_fd
+    onexc(func, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/shutil.py", line 700, in _rmtree_safe_fd
+    onexc(os.unlink, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/shutil.py", line 696, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/arnoy/Documents/GitHub/Honeytrap-UKCS/backend/build/server/localpycs'

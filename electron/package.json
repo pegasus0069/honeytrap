@@ -1,0 +1,64 @@
+{
+  "name": "honeytrap",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "description": "Honeytrap from UKCS",
+  "main": "./out/main/index.js",
+  "author": "mahir",
+  "homepage": "",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:win": "npm run build && electron-builder --win",
+    "build:linux": "npm run build && electron-builder --linux --arm64"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.3.1"
+  },
+  "build": {
+    "appId": "com.honeytrap.app",
+    "productName": "Honeytrap",
+    "directories": {
+      "output": "dist",
+      "buildResources": "resources"
+    },
+    "files": [
+      "out",
+      "node_modules",
+      "package.json"
+    ],
+    "asar": true,
+    "linux": {
+      "target": ["AppImage"],
+      "category": "Utility",
+      "icon": "resources/icon.png",
+      "artifactName": "${productName}-arm64.${ext}",
+      "maintainer": "mahir",
+      "description": "Honeytrap from UKCS"
+    }
+  }
+}

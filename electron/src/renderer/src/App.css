@@ -1,0 +1,67 @@
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+}
+
+@keyframes flashBackground {
+  0%, 100% {
+    background-color: red; /* Flash to red */
+  }
+  50% {
+    background-color: white; /* Flash to white */
+  }
+}
+.blackTable {
+  overflow-y: auto;
+}
+
+.mainContainerAlert {
+  position: relative;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  animation: flashBackground 0.5s infinite; /* Flash every 0.5s, repeat indefinitely */
+}
+
+
+.logo {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  height: 10vh;
+  width: 10vh;
+  transition: filter 0.2s ease; /* Smooth transition effect */
+}
+.dropdown {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+}
+.dropdownToggle {
+  position: absolute;
+  top: 0vh;
+  right: 0vh;
+  height: 10vh;
+  width: 10vh;
+  opacity: 0;
+}
+.dropdown .dropdown-item {
+  font-size: 4vh;  /* Adjust the font size */
+  font-weight: bold;
+  padding: 10px 15px;  /* Adjust padding for larger items */
+}
+
+.settingsMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding: 5vh;
+}
+.passwordAlert {
+  position: fixed;
+  top: 30vh;
+}
